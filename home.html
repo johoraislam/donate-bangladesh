@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header class="pb-10 sticky overflow-hidden top-0 bg-white">
         <nav class="bg-[#F9F7F3] h-20 flex items-center">
@@ -62,8 +64,58 @@
                 class="py-4 px-8 text-lg font-semibold rounded-lg border-[#111111] border-opacity-30">History</button>
         </div>
     </header>
-    
+
+    <main class="my-10 mx-5 md:mx-10">
+        <!-- card-1 starts here -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 p-8 border border-[#111111] border-opacity-10 rounded-2xl">
+            <div>
+                <img src="./assets/noakhali.png" alt="noakhali-flood ">
+            </div>
+
+
+            <div>
+
+
+                <div class="py-3 px-6 rounded-lg bg-[#111111] bg-opacity-5 flex items-center  w-fit">
+                    <img src="./assets/coin.png" alt="coin-img">
+                    <p class="text-[#111111] text-opacity-70 font-medium">
+                        <span id="total-donation">5000</span>
+                        <span>BDT</span>
+                    </p>
+                </div>
+                <!-- text containt -->
+
+                <h2 class="my-4 text-xl font-bold text-[#111111] text-opacity-70">Donate for Flood at Noakhali,
+                    Bangladesh</h2>
+                <p class="mb-6"> The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                    Your donation will help provide essential supplies and to those affected by this disaster. Every
+                    contribution reli, efforts and making a positive impact on the lives of those in need.</p>
+                <div class="space-y-4">
+                    <input id="noakhali-donation" type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full" />
+                    <button id="donate-btn"
+                        class="py-4 px-8 text-lg font-semibold bg-[#B4F461] rounded-lg w-full text-[#111111]">Donate
+                        Now
+
+
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
