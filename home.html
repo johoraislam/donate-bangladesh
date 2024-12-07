@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
+    <!-- Daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header class="pb-10 sticky overflow-hidden top-0 bg-white">
+        <nav class="bg-[#F9F7F3] h-20 flex items-center">
+            <!-- topbar for mobile devices -->
+            <div class="md:hidden flex items-center justify-between w-full  px-3">
+                <div class="flex gap-2 items-center">
+                    <img src="./assets/logo.png" alt="nav-logo">
+                    <h3 class="text-base text-[#111111] font-semibold">Donate Bangladesh</h3>
+                </div>
+
+                <div class="flex gap-2 items-center">
+                    <img src="./assets/coin.png" alt="nav-coin">
+                    <p class="font-medium text-[#111111] text-opacity-50">
+                        <span class="account-balance">8500</span>
+                        <span>BDT</span>
+                    </p>
+
+                </div>
+
+
+
+            </div>
+            <!-- topbar for mobile devices ends here -->
+            <!-- navbar for desktop devices starts here -->
+            <div class="hidden md:flex md:justify-between md:items-center w-10/12 mx-auto">
+                <a href="blog.html" class="rounded-lg text-[#111111] font-bold py-3 px-6 bg-[#B4F461]">Blog</a>
+
+
+                <div class="flex gap-2 items-center">
+                    <img src="./assets/logo.png" alt="nav-logo">
+                    <h3 class="text-xl text-[#111111] font-semibold">Donate Bangladesh</h3>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img src="./assets/coin.png" alt="nav-coin">
+                    <p class="font-medium text-[#111111] text-opacity-50">
+                        <span class="account-balance">8500</span>
+                        <span>BDT</span>
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- navbar for desktop devices ends here -->
+
+        </nav>
+
+        <!-- donation and history button -->
+        <div class="text-center mt-4 md:mt-8 space-x-4">
+            <button id="donation-btn"
+                class="py-4 px-8 text-lg font-semibold bg-[#B4F461] border border-[#111111] border-opacity-30 rounded-lg">Donation</button>
+            <button id="history-btn"
+                class="py-4 px-8 text-lg font-semibold rounded-lg border-[#111111] border-opacity-30">History</button>
+        </div>
+    </header>
     
 
     <script src="./js/script.js"></script>
