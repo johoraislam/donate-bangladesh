@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <!-- Daisy UI link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+  <header class="pb-10 sticky overflow-hidden top-0 z-50 bg-white">
+    <nav class="bg-[#F9F7F3] h-20 flex items-center">
+
+      <!-- navbar for desktop devices starts here -->
+      <div class="flex justify-between items-center w-10/12 mx-auto">
+        <a href="./index.html" class="rounded-lg text-[#111111] font-bold py-3 px-6 bg-[#B4F461]">Home</a>
+
+
+        <div class="sm:flex gap-2 items-center hidden">
+          <img src="./assets/logo.png" alt="nav-logo">
+          <h3 class="text-xl text-[#111111] font-semibold">Donate Bangladesh</h3>
+        </div>
+        <div class="flex gap-2 items-center">
+          <img src="./assets/coin.png" alt="nav-coin">
+          <p class="font-medium text-[#111111] text-opacity-50">
+            <span id="account-balance">8500</span>
+            <span>BDT</span>
+          </p>
+
+        </div>
+
+      </div>
+      <!-- navbar for desktop devices ends here -->
+
+    </nav>
+
+
+
+
+  </header>
+
+
+
+
+  <main class="my-4 font-bold md:w-10/12 md:mx-auto">
+    <h1 class="text-2xl text-center md:text-3xl lg:text-4xl my-4">Important FAQ</h1>
+    <div tabindex="0" class="py-4 px-2 mb-2 md:mb-5 collapse collapse-arrow border-base-300 bg-base-200 border">
+      <div class="collapse-title ">
+        <h1 class="text-2xl font-medium">What is Document Object Model(DOM)?</h1>
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg font-normal">DOM stands for Document Object Model is a programming interface which represents
+          the structure of a webpage. With DOM, we can manipulate a webpage such as modify or replace the text,images
+          and other elements.</p>
+      </div>
+    </div>
+    <div tabindex="0" class="py-4 px-2 mb-2 md:mb-5 collapse collapse-arrow border-base-300 bg-base-200 border">
+      <div class="collapse-title ">
+        <h1 class="text-2xl font-medium">How do you select an element from the DOM?</h1>
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg font-normal">There are a few ways to select an element or multiple elements in DOM. The first
+          one is the most used "GetElementByID" which needs an ID to select an element and another almost similar one is
+          querySelecter. For multiple elements to select Javascript provides a couple of methods such as
+          GetElementsbyClassNames and querySelectorAll and GetElementsbyTagName. It's all used in different cases</p>
+      </div>
+    </div>
+    <div tabindex="0" class="py-4 px-2 mb-2 md:mb-5 collapse collapse-arrow border-base-300 bg-base-200 border">
+      <div class="collapse-title ">
+        <h1 class="text-2xl font-medium">What is event delegation in the context of a DOM and why is it useful?</h1>
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg font-normal">Event delegation is a pattern where we delegate the event listener to a parent
+          element to avoid attaching multiple event listeners to an individual element</p>
+      </div>
+    </div>
+    <div tabindex="0" class="py-4 px-2  collapse collapse-arrow border-base-300 bg-base-200 border">
+      <div class="collapse-title ">
+        <h1 class="text-2xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</h1>
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg font-normal">We can use different methods and properties to manipulate an element's attributes
+          and styles.
+        <ul>
+          <h1>To Manipulate attributes</h1>
+          <li>getAttribute(): Retrieves the value of an attribute.
+          </li>
+          <li>
+            setAttribute(): Sets or changes the value of an attribute.
+
+          </li>
+          <li>removeAttribute(): Removes an attribute.</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
